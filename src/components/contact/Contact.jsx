@@ -1,7 +1,19 @@
-import React from 'react'
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import './contact.css'
 
 const Contact = () => {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+      e.preventDefault();
+  
+      emailjs
+        .sendForm('service_86tea2e', 'template_cfrmq5i', form.current, {
+          publicKey: 'RS5chIpO12OT10QpL',
+        })
+        e.target.reset();
+    };
   return (
     <section className="contact section" id="contact">        
         <h2 className="section__title">Contact Me</h2>
@@ -39,27 +51,27 @@ const Contact = () => {
             <div className="contact__content">
                 <h3 className="contact__title">Write me your project</h3>
 
-                <form action="" className="contact__form">
+                <form ref={form} onSubmit={sendEmail} className="contact__form">
                     <div className="contact__form-div">
                         <label className="contact__form-tag">Name</label>
-                        <input type="text" className="contact__form-input" placeholder="Insert your name" />
+                        <input type="text" name='name' className="contact__form-input" placeholder="Insert your name" />
                     </div>
 
                     <div className="contact__form-div">
                         <label className="contact__form-tag">Mail</label>
-                        <input type="email" className="contact__form-input" placeholder="Insert your email" />
+                        <input type="email" name='email' className="contact__form-input" placeholder="Insert your email" />
                     </div>
 
                     <div className="contact__form-div contact__form-area">
                         <label className="contact__form-tag">Project</label>
-                        <textarea name="" id="" cols="30" rows="10" className="contact__form-input" placeholder="Write your project"></textarea>
+                        <textarea name="project" cols="30" rows="10" className="contact__form-input" placeholder="Write your project"></textarea>
                     </div>
-
+            
                     <button className="button button--flex">
                         Send Message
                         <i className="uil uil-message button__icon"></i>
                     </button>
-                </form>
+                </form> 
             </div>
         </div>
     </section>  
