@@ -1,7 +1,7 @@
 import React from 'react'
 import './about.css'
 import AboutImg from '../../assets/about.jpg'
-import CV from '../../assets/John-Cv.pdf'
+import CV from '../../assets/UmangRaj_ResumeTnpMarch2025.pdf'
 import Info from './Info'
 
 const About = () => {
@@ -17,7 +17,7 @@ const About = () => {
                 <Info />
 
                 <p className="about__description">
-                    I'm a frontend developer, and I'm very passionate and dedicated to my work. Blahhh blahhh blahhhhsdlfkdsjfsdslkfjsdlkfjklj
+                    I'm a 3rd year UG at DTU, interested in tech, music, fashion, art, philosophy and everything in between. I love B&W and minimalistic design, which is visible in my work. 
                 </p>
 
                 <a download="" href={CV} className="button button--flex">

@@ -24,18 +24,18 @@ const Qualification = () => {
 
                 <div className={ToggleState === 2 ? "qualification__button qualification__active button--flex" : "qualification__button button--flex"} onClick={() => ToggleTab(2)} data-target="#experience">
                     <i className='uil uil-briefcase-alt qualification__icon'></i>
-                    Experience
+                    Experience/POR
                 </div>
             </div>
             <div className="qualification__sections">
                 <div className={ToggleState === 1 ? "qualification__content qualification__content-active" : "qualification__content"} data-content id="education">
                     <div className="qualification__data">
                         <div>
-                            <h3 className="qualification__title">B.Tech</h3>
-                            <span className="qualification__subtitle">PES University</span>
+                            <h3 className="qualification__title">High School</h3>
+                            <span className="qualification__subtitle">K.R.D Int. School</span>
                             <div className="qualification__calendar">
                                 <i className="uil uil-calendar-alt"></i>
-                                2018 - 2022 
+                                2020 - 2022 
                             </div>
                         </div>
 
@@ -54,11 +54,11 @@ const Qualification = () => {
                         </div>
 
                         <div>
-                            <h3 className="qualification__title">M.Tech</h3>
-                            <span className="qualification__subtitle">PES University</span>
+                            <h3 className="qualification__title">B.Tech</h3>
+                            <span className="qualification__subtitle">Delhi Technological University (Previously DCE)</span>
                             <div className="qualification__calendar">
                                 <i className="uil uil-calendar-alt"></i>
-                                2022 - 2024 
+                                2022 - Present(exp. 2026)
                             </div>
                         </div>
                     </div>
@@ -67,11 +67,11 @@ const Qualification = () => {
                 <div className={ToggleState === 2 ? "qualification__content qualification__content-active" : "qualification__content"} data-content id="experience">
                     <div className="qualification__data">
                         <div>
-                            <h3 className="qualification__title">Frontend developer</h3>
-                            <span className="qualification__subtitle">PES University</span>
+                            <h3 className="qualification__title">Founder's Office Intern</h3>
+                            <span className="qualification__subtitle">CattleGuru (Agritech startup)</span>
                             <div className="qualification__calendar">
                                 <i className="uil uil-calendar-alt"></i>
-                                2022 - 2024 
+                                Nov 2022 - Feb 2023 
                             </div>
                         </div>
 
@@ -90,14 +90,29 @@ const Qualification = () => {
                         </div>
 
                         <div>
-                            <h3 className="qualification__title">Backend developer</h3>
-                            <span className="qualification__subtitle">PES University</span>
+                            <h3 className="qualification__title">President</h3>
+                            <span className="qualification__subtitle">Panache Daily</span>
                             <div className="qualification__calendar">        
                                 <i className="uil uil-calendar-alt"></i>
-                                2022 - 2024 
+                                2022 - 2025 
                             </div>
                         </div>
                     </div>
+                    <div className="qualification__data">
+                        <div>
+                            <h3 className="qualification__title">SDE Intern</h3>
+                            <span className="qualification__subtitle">(Seeking Opportunities)</span>
+                            <div className="qualification__calendar">
+                                <i className="uil uil-calendar-alt"></i>
+                                Present
+                            </div>
+                        </div>
+
+                        <div>
+                            <span className="qualification__rounder"></span>
+                            <span className="qualification__line"></span>
+                        </div>
+                    </div>  
                 </div>
             </div>  
         </div>       

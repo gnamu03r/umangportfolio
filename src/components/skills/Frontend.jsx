@@ -3,7 +3,7 @@ import React from 'react'
 const Frontend = () => {
   return (
     <div className="skills__content">
-        <h3 className="skills__title">Frontend developer</h3>
+        <h3 className="skills__title">Technologies</h3>
         <div className="skills__box"> 
             <div className="skills__group"> 
                 <div className="skills__data"> 
@@ -16,7 +16,14 @@ const Frontend = () => {
                 <div className="skills__data"> 
                     <i className="bx bx-medal skills__icon"></i>
                     <div>
-                        <h3 className="skills__name">Ruby on Rails</h3>
+                        <h3 className="skills__name">CSS</h3>
+                        <span className="skills__level">Intermediate</span>
+                    </div>
+                </div>
+                <div className="skills__data"> 
+                    <i className="bx bx-medal skills__icon"></i>
+                    <div>
+                        <h3 className="skills__name">Javascript</h3>
                         <span className="skills__level">Intermediate</span>
                     </div>
                 </div>
@@ -30,14 +37,7 @@ const Frontend = () => {
                 <div className="skills__data"> 
                     <i className="bx bx-medal skills__icon"></i>
                     <div>
-                        <h3 className="skills__name">Vue</h3>
-                        <span className="skills__level">Intermediate</span>
-                    </div>
-                </div>
-                <div className="skills__data"> 
-                    <i className="bx bx-medal skills__icon"></i>
-                    <div>
-                        <h3 className="skills__name">Angular</h3>
+                        <h3 className="skills__name">Node</h3>
                         <span className="skills__level">Intermediate</span>
                     </div>
                 </div>
