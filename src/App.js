@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import Alert from './components/alert/Alert';
 import Header from './components/header/Header';
 import Home from './components/home/Home';
 import About from './components/about/About';
@@ -15,6 +16,7 @@ import Scrollup from './components/scrollup/Scrollup';
 function App() {
   return (
     <>
+      <Alert />
       <Header />
 
       <main className="main">
