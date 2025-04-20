@@ -50,7 +50,26 @@
   --z-modal: 1000;
 }
 
+
 /*Responsive typography*/
+
+@media screen and (max-width: 1600px) {
+  html{
+    font-size: 1rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+  body{
+    /* margin-left: 10rem; */
+  }
+  @media screen and (-webkit-min-device-pixel-ratio: 1.5) {
+    html {
+      font-size: 15px; /* Adjust Brave's zoom issue */
+    }
+  }
+  
+}
+
 @media screen and (max-width: 992px) {
   :root {
     --big-font-size: 2.75rem;
