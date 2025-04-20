@@ -17,7 +17,7 @@ html{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    column-gap: 1rem;
+    column-gap: 34rem;
 }
 
 .nav__logo,
