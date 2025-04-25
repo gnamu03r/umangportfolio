@@ -59,6 +59,7 @@ const styles = {
         fontSize: "2rem",
         zIndex: 100,
         overflow: "hidden",
+        
     },
     text: {
         fontSize: "2.5rem",

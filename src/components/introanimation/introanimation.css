@@ -1,5 +1,7 @@
 @media screen and (max-width: 768px) {  
     .intro h1{
         font-size: 1.1rem !important;
+        text-align: center;
     }
+   
 }
