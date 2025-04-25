@@ -56,18 +56,23 @@
 @media screen and (max-width: 1600px) {
   html{
     font-size: 1rem;
-    margin-left: 10rem;
-    margin-right: 10rem;
+    /* margin-left: 10rem;
+    margin-right: 10rem; */
   }
+
+  .home__container.container.grid{
+    margin-left: 10rem;
+  }
+
   body{
-    /* margin-left: 10rem; */
+   
   }
   @media screen and (-webkit-min-device-pixel-ratio: 1.5) {
     html {
       font-size: 15px; /* Adjust Brave's zoom issue */
     }
   }
-  
+
 }
 
 @media screen and (max-width: 992px) {
@@ -215,10 +220,54 @@ img {
 
 /* For medium devices */
 @media screen and (max-width: 768px) {
-
   body{
-    margin: 0 0 var(--header-height) 0;
+    display: flex;
+    justify-content: center;
   }
+
+  button{
+    display: none;
+  }
+  
+  .home__content{
+    margin-left: 2rem;
+  }
+  .contact__form{
+    /* margin-left: 2rem;
+     */
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+  }
+
+  button.button--flex{
+    justify-self: center;
+    align-items: center;
+    width: 13rem;
+    margin-left: 4rem;
+  }
+  .nav.container{
+    display: flex;
+    /* flex-direction: column; */
+    /* gap: 20rem; */
+    /* justify-content: space-between; */
+    /* max-width: 5rem; */
+    align-items: center;
+    gap: 10rem;
+  }
+
+  .qualification.section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+      
+  body{
+    /* margin: -2rem; */
+    padding: 1rem;
+  }
+
 
   .section {
     padding: 2rem 0 4rem;

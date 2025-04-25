@@ -21,38 +21,38 @@ import Scrollup from './components/scrollup/Scrollup';
 function App() {
 
   //disable devtools
-  useEffect(() => {
-    const detectDevTools = () => {
-        const startTime = performance.now();
-        debugger;
-        const endTime = performance.now();
-        if (endTime - startTime > 100) {
-            alert("DevTools detected! Access denied.");
-            window.location.href = "https://google.com"; // Redirect
-        }
-    };
+//   useEffect(() => {
+//     const detectDevTools = () => {
+//         const startTime = performance.now();
+//         debugger;
+//         const endTime = performance.now();
+//         if (endTime - startTime > 100) {
+//             alert("DevTools detected! Access denied.");
+//             window.location.href = "https://google.com"; // Redirect
+//         }
+//     };
 
-    setInterval(detectDevTools, 2000);
-}, []);
+//     setInterval(detectDevTools, 2000);
+// }, []);
 
 
-  useEffect(() => {
-    // Disable Right Click
-    document.addEventListener("contextmenu", (event) => event.preventDefault());
+//   useEffect(() => {
+//     // Disable Right Click
+//     document.addEventListener("contextmenu", (event) => event.preventDefault());
 
-    // Disable Keyboard Shortcuts for DevTools
-    document.addEventListener("keydown", (event) => {
-        if (
-            event.ctrlKey &&
-            (event.key === "u" || event.key === "s" || event.key === "i" || event.key === "j" || event.key === "h" || event.key === "k" || event.key === "c")
-        ) {
-            event.preventDefault();
-        }
-        if (event.keyCode === 123) {
-            event.preventDefault();
-        }
-    });
-}, []);
+//     // Disable Keyboard Shortcuts for DevTools
+//     document.addEventListener("keydown", (event) => {
+//         if (
+//             event.ctrlKey &&
+//             (event.key === "u" || event.key === "s" || event.key === "i" || event.key === "j" || event.key === "h" || event.key === "k" || event.key === "c")
+//         ) {
+//             event.preventDefault();
+//         }
+//         if (event.keyCode === 123) {
+//             event.preventDefault();
+//         }
+//     });
+// }, []);
 
 
 //intro animation javascript
@@ -66,7 +66,7 @@ function App() {
     <>
       {showIntro && <IntroAnimation />}
       <CustomCursor />
-      <MagneticButton />  
+      <MagneticButton />
       <ParticlesBackground />
       <Header />
       <MusicPlayer />
