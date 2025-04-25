@@ -1,6 +1,7 @@
 import React from "react";
 import Particles from "react-tsparticles";
 import { loadSlim } from "tsparticles-slim"; // Fix: Use slim version instead of full
+import './particlesbackground.css';
 
 const ParticlesBackground = () => {
     const particlesInit = async (engine) => {
@@ -10,6 +11,7 @@ const ParticlesBackground = () => {
     return (
         <Particles
             id="tsparticles"
+            className="particles"
             init={particlesInit}
             options={{
                 fullScreen: { enable: true },
@@ -18,7 +20,7 @@ const ParticlesBackground = () => {
                     number: { value: 80 },
                     color: { value: "#555" },
                     shape: { type: "circle" },
-                    opacity: { value: 0.7 },
+                    opacity: { value: 0.4 },
                     size: { value: 3 },
                     move: {
                         enable: true,

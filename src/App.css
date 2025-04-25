@@ -208,6 +208,7 @@ img {
     margin-right: var(--mb-1-5);
   }
 
+
   .button {
     padding: 1rem 1.75rem;
   }
@@ -223,10 +224,14 @@ img {
   body{
     display: flex;
     justify-content: center;
+    min-width: 20rem;
   }
 
   button{
     display: none;
+  }
+  .home__container.container.grid{
+    margin-left: 2rem;
   }
   
   .home__content{

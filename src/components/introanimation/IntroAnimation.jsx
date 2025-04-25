@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
+import './introanimation.css';
 
 const IntroAnimation = ({ onComplete }) => {
     const introRef = useRef(null);
@@ -36,8 +37,8 @@ const IntroAnimation = ({ onComplete }) => {
     }, [onComplete]);
 
     return (
-        <div ref={introRef} style={styles.container}>
-            <div ref={circleRef} style={styles.circle}></div>
+        <div ref={introRef} style={styles.container} className="intro">
+            <div ref={circleRef} style={styles.circle} className="intro_circle"></div>
             <h1 ref={textRef} style={styles.text}>YOU'RE ENTERING UMANG'S PORTFOLIO</h1>
         </div>
     );
@@ -72,6 +73,7 @@ const styles = {
         background: "#888",
         borderRadius: "50%",
     },
+
 };
 
 export default IntroAnimation;
